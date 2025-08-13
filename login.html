@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eutel Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+</head>
+<body class="bg-white min-h-screen flex flex-col relative">
+
+<!-- DESKTOP HEADER -->
+<header class="hidden md:block relative bg-[var(--brand-green)] py-6 pb-[85px] pt-1 px-12">
+    <div class="mx-auto flex items-center justify-between bg-white rounded-lg shadow px-6 py-2 w-[90%] mt-4 relative z-10">
+        <!-- Logo -->
+        <img src="assets/images/logo.png" alt="Eutel logo" class="h-[26px] w-[32px]"/>
+        <!-- Menu -->
+        <nav class="flex space-x-4 text-sm">
+            <a href="#">Settings</a>
+            <a href="#">Postpaid</a>
+            <a href="#">Logout</a>
+        </nav>
+    </div>
+    <!-- Decorative cubes -->
+    <img src="assets/images/cube.png"
+         alt="Decorative cubes"
+         class="absolute top-[26px] right-[250px] w-32 pointer-events-none select-none z-50"/>
+    <img src="assets/images/cube.png"
+         alt="Decorative cubes"
+         class="absolute top-[46px] right-[150px] w-32 pointer-events-none select-none z-50"/>
+</header>
+
+<!-- MOBILE HEADER -->
+<div class="md:hidden relative overflow-hidden h-[40vh]">
+    <!-- Green angled background with cubes -->
+    <div
+            class="absolute inset-0 bg-green-600"
+            style="
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+      ">
+    </div>
+
+    <!-- Logo + text -->
+    <div class="relative px-4 pt-6">
+        <div class="bg-white rounded-lg shadow p-2 w-full">
+            <img src="assets/images/logo.png" alt="Eutel logo" class="h-9 w-auto"/>
+        </div>
+        <h1 class="text-white font-poppins text-lg font-semibold mt-4 text-lg">Log in</h1>
+        <p class="text-white text-sm opacity-90 text-xs">Use your phone number</p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow flex flex-col items-center px-4 relative">
+    <!-- Login card -->
+    <div class="bg-white rounded-lg shadow p-6 max-w-sm md:mt-0 md:-mt-16 -mt-32 z-10 relative login-box-shadow w-[320px] h-[342px] md:mt-[115px]">
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[-115px] right-[50px] w-32 pointer-events-none select-none z-50"/>
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[-90px] right-[-62px] w-32 pointer-events-none select-none z-50"/>
+        <!-- Phone -->
+        <label class="block font-poppins font-semibold mb-1 text-lg">Phone number</label>
+        <div class="flex items-center border rounded px-3 py-2 mb-4">
+            <span class="pr-2 font-semibold text-sm">+599</span>
+            <input type="tel" placeholder="Phone number" class="flex-grow outline-none text-sm"/>
+        </div>
+
+        <!-- Password -->
+        <label class="block font-poppins font-semibold mb-1 text-lg">Password</label>
+        <div class="flex items-center border rounded px-3 py-2 mb-4">
+            <input type="password" placeholder="Password" class="flex-grow outline-none text-sm"/>
+            <img src="assets/icons/eye.png" class="mx-auto" alt="eye-icon"/>
+            </svg>
+        </div>
+
+        <!-- Login button -->
+        <button class="bg-blue-900 text-white w-full py-2 rounded mb-4 text-sm w-[300px] h-[50px] mt-2">Log in</button>
+        <a href="#" class="text-sm text-gray-600 block text-center text-sm">Forgot password</a>
+    </div>
+
+    <!-- Footer logo -->
+    <div class="mt-10">
+        <img src="assets/images/footer-logo.png" alt="Eutel logo" class="h-[71px] w-[87.38px] mx-auto"/>
+    </div>
+</main>
+
+</body>
+</html>
