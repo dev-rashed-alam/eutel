@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eutel - SMS Activation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen flex flex-col relative">
+
+<!-- DESKTOP HEADER -->
+<header class="hidden md:block relative bg-[var(--brand-green)] py-6 pb-[85px] pt-1 px-12">
+    <div class="mx-auto flex items-center justify-between bg-white rounded-lg shadow px-6 py-2 w-[90%] mt-4 relative z-10">
+        <!-- Logo -->
+        <img src="assets/images/logo.png" alt="Eutel logo" class="h-[26px] w-[32px]"/>
+        <!-- Menu -->
+        <nav class="flex space-x-4 text-sm">
+            <a href="#">Settings</a>
+            <a href="#">Postpaid</a>
+            <a href="#">Logout</a>
+        </nav>
+    </div>
+    <!-- Decorative cubes -->
+    <img src="assets/images/cube.png"
+         alt="Decorative cubes"
+         class="absolute top-[26px] right-[250px] w-32 pointer-events-none select-none z-50"/>
+    <img src="assets/images/cube.png"
+         alt="Decorative cubes"
+         class="absolute top-[46px] right-[150px] w-32 pointer-events-none select-none z-50"/>
+</header>
+
+<!-- MOBILE HEADER -->
+<div class="md:hidden relative overflow-hidden h-[50vh]">
+    <div
+            class="absolute inset-0 bg-green-600"
+            style="
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        ">
+    </div>
+    <div class="relative px-4 pt-6">
+        <div class="bg-white rounded-lg shadow p-2 w-full">
+            <img src="assets/images/logo.png" alt="Eutel logo" class="h-9 w-auto"/>
+        </div>
+        <h1 class="text-white font-poppins text-lg font-semibold mt-4">Log in</h1>
+        <p class="text-white text-xs opacity-90">Use your phone number</p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow flex flex-col items-center px-4 relative">
+    <!-- SMS Activation card -->
+    <div class="bg-white rounded-lg shadow p-6 max-w-sm md:mt-0 -mt-40 z-10 relative login-box-shadow w-[320px]">
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[-115px] md:right-[50px] right-[83px] w-32 pointer-events-none select-none z-50"/>
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[-90px] md:right-[-62px] right-[-13px] w-32 pointer-events-none select-none z-50"/>
+
+        <!-- Title -->
+        <h2 class="font-poppins font-semibold text-lg mb-2">SMS activation</h2>
+        <p class="text-sm text-gray-600 mb-4">
+            We’ve sent a 6-digit verification code to your phone—please enter it below once received, or tap "Resend
+            Code" if it doesn’t arrive within a minute.
+        </p>
+
+        <!-- Code Inputs -->
+        <div class="flex justify-between mb-6">
+            <input type="text" maxlength="1" class="w-10 h-10 border rounded text-center font-semibold" value="2">
+            <input type="text" maxlength="1" class="w-10 h-10 border rounded text-center font-semibold" value="3">
+            <input type="text" maxlength="1" class="w-10 h-10 border rounded text-center font-semibold" value="0">
+            <input type="text" maxlength="1" class="w-10 h-10 border rounded text-center font-semibold" value="4">
+            <input type="text" maxlength="1" class="w-10 h-10 border rounded text-center font-semibold" value="4">
+        </div>
+
+        <!-- Login Button -->
+        <button class="bg-blue-900 text-white w-full py-2 rounded mb-2 text-sm">Log in</button>
+        <a href="#" class="block text-center text-gray-600 text-sm">Resend Code</a>
+    </div>
+
+    <!-- Footer logo -->
+    <div class="mt-10">
+        <img src="assets/images/footer-logo.png" alt="Eutel logo" class="h-[71px] w-[87.38px] mx-auto"/>
+    </div>
+</main>
+
+</body>
+</html>
