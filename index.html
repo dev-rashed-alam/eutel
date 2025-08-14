@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="assets/css/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
 </head>
 <body class="bg-white min-h-screen flex flex-col relative">
 
@@ -69,18 +68,17 @@
              alt="Decorative cubes"
              class="absolute top-[-90px] md:right-[-62px] right-[-13px] w-32 pointer-events-none select-none z-50"/>
         <!-- Phone -->
-        <label class="block font-poppins font-semibold mb-1 text-lg">Phone number</label>
+        <label class="block font-poppins font-semibold mb-1 text-lg" for="phone">Phone number</label>
         <div class="flex items-center border rounded px-3 py-2 mb-4">
             <span class="pr-2 font-semibold text-sm">+599</span>
-            <input type="tel" placeholder="Phone number" class="flex-grow outline-none text-sm"/>
+            <input type="tel" placeholder="Phone number" class="flex-grow outline-none text-sm" id="phone"/>
         </div>
 
         <!-- Password -->
-        <label class="block font-poppins font-semibold mb-1 text-lg">Password</label>
+        <label class="block font-poppins font-semibold mb-1 text-lg" for="password">Password</label>
         <div class="flex items-center border rounded px-3 py-2 mb-4">
-            <input type="password" placeholder="Password" class="flex-grow outline-none text-sm"/>
+            <input type="password" placeholder="Password" class="flex-grow outline-none text-sm" id="password"/>
             <img src="assets/icons/eye.png" class="mx-auto" alt="eye-icon"/>
-            </svg>
         </div>
 
         <!-- Login button -->
