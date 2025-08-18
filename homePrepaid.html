@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eutel - Prepaid Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen flex flex-col relative">
+
+<!-- DESKTOP HEADER -->
+<header class="hidden md:block relative bg-[var(--brand-green)] py-6 pb-[85px] pt-1 px-12">
+    <div class="mx-auto flex items-center justify-between bg-white rounded-lg shadow px-6 py-2 w-[90%] mt-4 relative z-10">
+        <!-- Logo -->
+        <img src="assets/images/logo.png" alt="Eutel logo" class="h-[26px] w-[32px]"/>
+        <!-- Menu -->
+        <nav class="flex space-x-4 text-sm">
+            <a href="#">Settings</a>
+            <a href="#">Postpaid</a>
+            <a href="#">Logout</a>
+        </nav>
+    </div>
+    <!-- Decorative cubes -->
+    <img src="assets/images/cube.png"
+         alt="Decorative cubes"
+         class="absolute top-[26px] right-[250px] w-32 pointer-events-none select-none z-50"/>
+    <img src="assets/images/cube.png"
+         alt="Decorative cubes"
+         class="absolute top-[46px] right-[150px] w-32 pointer-events-none select-none z-50"/>
+</header>
+
+<!-- MOBILE HEADER -->
+<div class="md:hidden relative overflow-hidden h-[40vh]">
+    <div
+            class="absolute inset-0 bg-green-600"
+            style="
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        ">
+    </div>
+    <div class="relative px-4 pt-6">
+        <div class="bg-white rounded-lg shadow p-2 w-full">
+            <div class="flex items-center justify-between">
+                <img src="assets/images/logo.png" alt="Eutel logo" class="h-9 w-auto"/>
+                <button class="text-gray-700 text-sm flex items-center pr-4">
+                    Logout
+                    <img src="assets/icons/more.png" alt="menu" class="mx-auto ml-2"/>
+                </button>
+            </div>
+        </div>
+        <h1 class="text-white font-poppins text-lg font-semibold mt-4">Hello, Username</h1>
+        <p class="text-white text-xs opacity-90">+599 318 1234</p>
+
+        <!-- Decorative cubes -->
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[50%] md:right-[50px] right-[83px] w-32 pointer-events-none select-none z-50"/>
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[50%] md:right-[-62px] right-[-13px] w-32 pointer-events-none select-none z-50"/>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow flex flex-col items-center px-4 relative">
+    <div class="md:mt-0 -mt-40 z-10 relative w-full max-w-sm">
+        <!-- Active Bundle Card -->
+        <div class="bg-[var(--bg-blue)] text-white rounded-lg shadow p-6 mt-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <img src="assets/icons/logo-blue.png" alt="Eutel" class="mb-2 -ml-2"/>
+                    <p class="text-lg font-semibold">PREPAID</p>
+                    <p class="text-xs opacity-90">1 DAY BUNDLE</p>
+                    <p class="text-xs mt-4">EXPIRES ON <span class="font-semibold">01-01-2025 | 7:15</span></p>
+                </div>
+                <img src="assets/icons/sim-card-green.png" alt="SIM" class="my-auto"/>
+            </div>
+        </div>
+
+        <!-- Usage Progress Bars -->
+        <div class="mt-6">
+            <div class="flex justify-between text-xs font-medium mb-1">
+                <span class="font-semibold font-poppins">DATA</span>
+                <span>100/300</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                <div class="bg-[var(--bg-progressbar)] h-2 rounded-full" style="width: 33%"></div>
+            </div>
+
+            <div class="flex justify-between text-xs font-medium mb-1">
+                <span class="font-semibold font-poppins">CALL MINUTES / SMS</span>
+                <span>10/30</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-[var(--bg-progressbar)] h-2 rounded-full" style="width: 33%"></div>
+            </div>
+        </div>
+
+        <!-- Credit section -->
+        <div class="mt-6">
+            <div class="flex mb-2">
+                <img src="assets/icons/card.png" alt="Credit" class="my-auto"/>
+                <span class="text-gray-900 font-poppins font-semibold ml-2 text-lg">
+                    CREDIT
+                </span>
+            </div>
+            <div class="flex items-center justify-between bg-gray-50 rounded-lg p-4 shadow-sm">
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <img src="assets/icons/receipt.png" alt="Info" class="my-auto"/>
+                    </div>
+                    <div>
+                        <p class="text-lg font-poppins font-semibold text-black">$ 10,00</p>
+                        <p class="text-xs text-gray-500">available in your account</p>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/icons/plus.png" alt="Add Credit" class="mx-auto"/>
+                </button>
+            </div>
+        </div>
+
+        <!-- Buy add-on bundles button -->
+        <button class="mt-6 w-full py-3 rounded-lg bg-[var(--brand-green)] text-white">
+            Buy add-on bundles
+        </button>
+    </div>
+</main>
+
+</body>
+</html>

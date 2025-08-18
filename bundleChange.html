@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eutel - Change Bundle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen flex flex-col relative">
+
+<!-- DESKTOP HEADER -->
+<header class="hidden md:block relative bg-[var(--brand-green)] py-6 pb-[85px] pt-1 px-12">
+    <div class="mx-auto flex items-center justify-between bg-white rounded-lg shadow px-6 py-2 w-[90%] mt-4 relative z-10">
+        <!-- Logo -->
+        <img src="assets/images/logo.png" alt="Eutel logo" class="h-[26px] w-[32px]"/>
+        <!-- Menu -->
+        <nav class="flex space-x-4 text-sm">
+            <a href="#">Settings</a>
+            <a href="#">Postpaid</a>
+            <a href="#">Logout</a>
+        </nav>
+    </div>
+    <!-- Decorative cubes -->
+    <img src="assets/images/cube.png" alt="Decorative cubes"
+         class="absolute top-[26px] right-[250px] w-32 pointer-events-none select-none z-50"/>
+    <img src="assets/images/cube.png" alt="Decorative cubes"
+         class="absolute top-[46px] right-[150px] w-32 pointer-events-none select-none z-50"/>
+</header>
+
+<!-- MOBILE HEADER -->
+<div class="md:hidden relative overflow-hidden h-[22vh]">
+    <div class="absolute inset-0 bg-green-600">
+    </div>
+    <div class="relative px-4 pt-6">
+        <div class="bg-white rounded-lg shadow p-2 w-full">
+            <div class="flex items-center justify-between">
+                <img src="assets/images/logo.png" alt="Eutel logo" class="h-9 w-auto"/>
+                <button class="text-gray-700 text-sm flex items-center pr-4">
+                    Logout
+                    <img src="assets/icons/more.png" alt="menu" class="mx-auto ml-2"/>
+                </button>
+            </div>
+        </div>
+        <h1 class="text-white font-poppins text-lg font-semibold mt-4">Change your bundle</h1>
+        <p class="text-white text-xs opacity-90">+599 318 1234</p>
+
+        <!-- Decorative cubes -->
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[50%] md:right-[50px] right-[83px] w-32 pointer-events-none select-none z-50"/>
+        <img src="assets/images/cube.png"
+             alt="Decorative cubes"
+             class="absolute top-[50%] md:right-[-62px] right-[-13px] w-32 pointer-events-none select-none z-50"/>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow flex flex-col items-center px-4 relative">
+    <div class="md:mt-0 -mt-4 z-10 relative w-full max-w-sm">
+
+        <!-- Back Button -->
+        <button class="bg-[var(--bg-blue)] text-white p-3 rounded-md mb-4">
+            <img src="assets/icons/caret-back.png" alt="Back" class="mx-auto"/>
+        </button>
+
+        <!-- Auto renew toggle -->
+        <div class="flex items-center justify-between mb-4">
+            <span class="font-poppins font-semibold">Auto-renew</span>
+            <label class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-black after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
+            </label>
+        </div>
+
+        <!-- Available bundles -->
+        <h2 class="font-poppins font-semibold mb-2">Available bundles</h2>
+        <div class="flex space-x-4 overflow-x-auto pb-2">
+            <!-- Bundle Card 1 -->
+            <div class="bg-[var(--bg-blue)] text-white rounded-lg shadow p-4 h-[180px] flex-shrink-0">
+                <p class="text-lg font-semibold">PREPAID</p>
+                <p class="text-xs opacity-90">1 DAY BUNDLE</p>
+                <p class="text-xs mt-4">EXPIRES ON <span class="font-semibold">01-01-2025</span></p>
+                <img src="assets/icons/sim-card-green-vertical.png" alt="SIM" class="mt-4 mx-auto"/>
+            </div>
+            <!-- Bundle Card 2 -->
+            <div class="bg-[var(--bg-blue)] text-white rounded-lg shadow p-4 h-[180px] flex-shrink-0">
+                <p class="text-lg font-semibold">PREPAID</p>
+                <p class="text-xs opacity-90">7 DAY BUNDLE</p>
+                <p class="text-xs mt-4">EXPIRES ON <span class="font-semibold">01-01-2025</span></p>
+                <img src="assets/icons/sim-card-green-vertical.png" alt="SIM" class="mt-4 mx-auto"/>
+            </div>
+        </div>
+
+        <!-- Price Info -->
+        <div class="flex items-center justify-between bg-gray-50 rounded-lg p-4 shadow-sm mt-6">
+            <div class="flex items-center space-x-4">
+                <img src="assets/icons/receipt.png" alt="Info"/>
+                <div>
+                    <p class="text-lg font-poppins font-semibold text-black">$ 2,00</p>
+                    <p class="text-xs text-gray-500">1 DAY BUNDLE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pay button -->
+        <button class="mt-6 w-full py-3 rounded-lg bg-[var(--brand-green)] text-white">
+            Pay this bundle
+        </button>
+
+    </div>
+</main>
+
+</body>
+</html>

@@ -4,7 +4,8 @@
 :root {
     --brand-green: #4EA91D;
     --brand-green-disabled: #b0d999;
-    --brand-blue: #003366;
+    --bg-blue: #005289;
+    --bg-progressbar: #E3FC6F;
     --box-shadow: 0 1px 3px 0 #00000080;
     --font-poppins: "Poppins", sans-serif;
 }
