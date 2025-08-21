@@ -14,7 +14,7 @@
 <body class="bg-white min-h-screen flex flex-col relative">
 
 <!-- DESKTOP HEADER -->
-<header class="hidden md:block relative bg-[var(--bg-green)] py-6 pb-[85px] pt-1 px-12">
+<header class="hidden relative bg-[var(--bg-green)] py-6 pb-[85px] pt-1 px-12">
     <div class="mx-auto flex items-center justify-between bg-white rounded-lg shadow px-6 py-2 w-[90%] mt-4 relative z-10">
         <!-- Logo -->
         <img src="assets/images/logo.png" alt="Eutel logo" class="h-[26px] w-[32px]"/>
@@ -33,6 +33,47 @@
          alt="Decorative cubes"
          class="absolute top-[46px] right-[150px] w-32 pointer-events-none select-none z-50"/>
 </header>
+
+<!-- DESKTOP LOGIN -->
+<div class="hidden md:flex min-h-screen">
+    <!-- Left Side -->
+    <div class="w-[30%] relative login-bg-position" style="background-image: url('assets/images/login-bg.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center px-20">
+            <h1 class="text-white font-poppins text-[32px] font-bold mb-6 text-center">One Touch<br>One Community<br>One World</h1>
+            <button class="bg-[var(--bg-green)] text-white py-3 px-6 rounded-[10px] text-lg hover:bg-[var(--bg-green-500)] transition">
+                Contact us
+            </button>
+        </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="w-[70%] flex flex-col justify-center items-center px-12 bg-white relative">
+        <img src="assets/images/main-logo.png" alt="Eutel logo" class="w-auto mb-8 absolute top-8 left-8"/>
+
+        <div class="w-[360px] max-w-md">
+            <h2 class="text-[25px] font-poppins font-semibold mb-2">Log in</h2>
+            <p class="text-gray-600 mb-6 text-lg">Use your phone number</p>
+
+            <!-- Phone number -->
+            <label class="block font-poppins text-lg font-semibold mb-1" for="phone">Phone number</label>
+            <div class="flex items-center border rounded px-3 py-2 mb-4">
+                <span class="pr-2 font-semibold text-sm">+599</span>
+                <input type="tel" placeholder="Phone number" class="flex-grow outline-none text-sm rounded-[10px]" id="phone"/>
+            </div>
+
+            <!-- OTP -->
+            <!--            <label class="block font-poppins text-lg font-semibold mb-1" for="otp">OTP</label>-->
+            <!--            <div class="flex items-center border rounded px-3 py-2 mb-4">-->
+            <!--                <input type="text" placeholder="Otp" class="flex-grow outline-none text-sm rounded-[10px]" id="otp"/>-->
+            <!--            </div>-->
+
+            <!-- Login button -->
+            <button class="bg-[var(--bg-blue)] text-white w-full py-3 rounded mb-4 hover:bg-[var(--bg-blue-500)] transition rounded-[10px]">Log in</button>
+
+            <a href="#" class="text-sm text-gray-600 block text-center">Forgot password</a>
+        </div>
+    </div>
+</div>
 
 <!-- MOBILE HEADER -->
 <div class="md:hidden relative overflow-hidden h-[40vh]">
@@ -66,7 +107,7 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<main class="flex-grow flex flex-col items-center px-4 relative">
+<main class="md:hidden flex-grow flex flex-col items-center px-4 relative">
     <!-- Login card -->
     <div class="bg-white rounded-lg shadow p-6 max-w-sm md:mt-0 md:-mt-16 -mt-32 z-10 relative login-box-shadow w-[320px] h-[250px] md:mt-[115px]">
         <img src="assets/images/cube.png"
