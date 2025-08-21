@@ -2,12 +2,18 @@
     font-family: "Roboto Light", sans-serif;
 }
 :root {
-    --brand-green: #4EA91D;
-    --brand-green-disabled: #b0d999;
+    --font-poppins: "Poppins Light", sans-serif;
+
+    --bg-green: #4fab1b;
+    --bg-green-500: #4e8033;
+    --bg-green-disabled: #b0d999;
+
     --bg-blue: #005289;
+    --bg-blue-500: #125785;
+
     --bg-progressbar: #E3FC6F;
+
     --box-shadow: 0 1px 3px 0 #00000080;
-    --font-poppins: "Poppins", sans-serif;
 }
 
 .login-box-shadow{
@@ -16,4 +22,9 @@
 
 .font-poppins {
     font-family: var(--font-poppins) !important;
+}
+
+.login-bg-position{
+    background-size: cover;
+    background-position: 10% center;
 }
